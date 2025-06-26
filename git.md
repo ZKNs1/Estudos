@@ -21,3 +21,19 @@ mkdir <directory-name>
 ```
 - `mkdir` é o comando
 - `<directory-name>` é o argumento obrigatório.
+
+## Manual
+Para mostrar o manual:
+```bash
+man git
+```
+
+**Atalhos:**
+- `q` sai do manual;
+- `j` desce uma linha;
+- `k` sobe uma linha;
+- `d` desce meia página;
+- `u` sobe meia página;
+- `/<term>` procura por um termo;
+- `n` próximo termo;
+- `N` termo anterior.
