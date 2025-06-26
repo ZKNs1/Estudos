@@ -37,3 +37,22 @@ man git
 - `/<term>` procura por um termo;
 - `n` próximo termo;
 - `N` termo anterior.
+
+## Porcelain e Plumbing
+No Git os comandos são dividos em comandos de alto nível (porcelain) e baixo nível (plumbing).
+
+**Porcelain**
+São os mais utilizados para interagir com o código.
+Exemplo: 
+- `git status`
+- `git add`
+- `git commit`
+- `git push`
+- `git pull`
+- `git log`
+
+**Plumbing**
+Exemplos: 
+- `git aplly`
+- `git commit-tree`
+- `git hash-object`
