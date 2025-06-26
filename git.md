@@ -56,3 +56,10 @@ Exemplos:
 - `git aplly`
 - `git commit-tree`
 - `git hash-object`
+
+## Configuração
+
+Toda vez que o código é alterado o git rastreia quem fez a alteração, por isso é preciso definir seu nome e e-mail. No Git temos configurações nível global e nivél do repositório, na maioria das vezes utilizamos as globais.
+
+O primeiro passo para qualquer projeto é a criação de um repositório, que é um diretório que contém seu projeto e a pasta `.git` que armazena informações de versionamento do projeto e a rastreabilidade interna.
+
