@@ -82,3 +82,7 @@ Exemplo:
 ```
 
 Para facilitar você pode se referir a um commit utilizando os 7 primeiros caracteres de seu hash, seguindo o exemplo: `5ba786f`.
+
+## Plumbing
+
+Todos os dados de um repositório são armazenados no diretório oculto `.git`, dados como os commits, branches, tags e outros objetos. O Git é composto por diversos objetos que são armazenados no `.git/objects`, um commit é um tipo de objeto.
