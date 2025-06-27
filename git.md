@@ -63,6 +63,16 @@ Toda vez que o código é alterado o git rastreia quem fez a alteração, por is
 
 O primeiro passo para qualquer projeto é a criação 
 de um repositório, que é um diretório que contém seu projeto e a pasta `.git` que armazena informações de versionamento do projeto e a rastreabilidade interna.
+- `git config`: interagir com as configurações do Git;
+- `--add`: adicionar uma configuração;
+- `--global`: salvar a configuração globalmente;
+- `--local`: salvar a configuração no repositório local;
+- `--list`: lista das configurações;
+- `--get`: conseguir valores (`git config --get <key>`);
+- `<key>`: `<section>.<keyname>`, exemplo: user.name, webflyx.ceo;
+- `--unset`: utilizado para remover um valor de uma configuração;
+- `--unset-all`: remove tudo de uma key na sua configuração;
+- `--remove-section`: remove uma seção inteira da configuração;
 
 ## Status
 - `untracked`: não está sendo rastreado pelo Git;
@@ -109,3 +119,8 @@ git cat-file -p <hash>
 git cat-file -p <tree>
 git cat-file -p <blob>
 ```
+
+## Armazenamento de dados
+O Git armazena uma snapshot (imagens) dos arquivos de cada commit, por conta disso ele também possui otimizações de desempenho, para que o repositório `.git` não fique grande e pesado demais.
+
+Essa otimização de desempenho ocorre com o Git comprimindo e agrupando os arquivos, para armazenar de forma mais eficiente, ele também só armazena um novo arquivo caso haja uma mudança num arquivo do commit.
