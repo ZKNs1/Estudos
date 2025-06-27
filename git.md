@@ -53,7 +53,7 @@ Exemplo:
 
 **Plumbing**
 Exemplos: 
-- `git aplly`
+- `git apply`
 - `git commit-tree`
 - `git hash-object`
 
@@ -61,9 +61,24 @@ Exemplos:
 
 Toda vez que o código é alterado o git rastreia quem fez a alteração, por isso é preciso definir seu nome e e-mail. No Git temos configurações nível global e nivél do repositório, na maioria das vezes utilizamos as globais.
 
-O primeiro passo para qualquer projeto é a criação de um repositório, que é um diretório que contém seu projeto e a pasta `.git` que armazena informações de versionamento do projeto e a rastreabilidade interna.
+O primeiro passo para qualquer projeto é a criação 
+de um repositório, que é um diretório que contém seu projeto e a pasta `.git` que armazena informações de versionamento do projeto e a rastreabilidade interna.
 
 ## Status
 - `untracked`: não está sendo rastreado pelo Git;
 - `staged`: marcado para incluir no próximo commit;
 - `committed`: salvo no histórico do repositório.
+
+## Git Log
+Mostra todo o histórico de commits do repositório, oferecendo informações como quem fez o commit, quando o commit foi feito e o que foi alterado.
+
+**Hash**
+
+Todo commit tem um identificador único que é uma longa string de caracteres. Esse hash é gerado a partir da mensagem do commit, do nome e e-mail do autor, o dia e a hora do commit e hashes de commits anteriores.
+
+Exemplo:
+```bash
+5ba786fcc93e8092831c01e71444b9baa2228a4f
+```
+
+Para facilitar você pode se referir a um commit utilizando os 7 primeiros caracteres de seu hash, seguindo o exemplo: `5ba786f`.
