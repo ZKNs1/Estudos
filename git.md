@@ -63,3 +63,7 @@ Toda vez que o código é alterado o git rastreia quem fez a alteração, por is
 
 O primeiro passo para qualquer projeto é a criação de um repositório, que é um diretório que contém seu projeto e a pasta `.git` que armazena informações de versionamento do projeto e a rastreabilidade interna.
 
+## Status
+- `untracked`: não está sendo rastreado pelo Git;
+- `staged`: marcado para incluir no próximo commit;
+- `committed`: salvo no histórico do repositório.
