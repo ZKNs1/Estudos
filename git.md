@@ -86,3 +86,26 @@ Para facilitar você pode se referir a um commit utilizando os 7 primeiros carac
 ## Plumbing
 
 Todos os dados de um repositório são armazenados no diretório oculto `.git`, dados como os commits, branches, tags e outros objetos. O Git é composto por diversos objetos que são armazenados no `.git/objects`, um commit é um tipo de objeto.
+
+## Cat File
+
+O Git criou o comando `cat-file` para permitir a gente ver os conteúdos do commit sem ter que ficar navegando pelos arquivos de objeto.
+
+```bash
+git cat-file -p <hash>
+```
+
+```bash
+catfile-command-here > /tmp/catfileout.txt
+git cat-file -p d5d5c951595fe4a03627e9770dc925838cc7650b > /tmp/catfileout.txt
+```
+
+## Trees and Blobs
+- Tree: jeito do Git de armazenar um diretório;
+- Blob: jeito do Git de armazenar um arquivo.
+
+```bash
+git cat-file -p <hash>
+git cat-file -p <tree>
+git cat-file -p <blob>
+```
