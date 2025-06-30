@@ -74,6 +74,17 @@ de um repositório, que é um diretório que contém seu projeto e a pasta `.git
 - `--unset-all`: remove tudo de uma key na sua configuração;
 - `--remove-section`: remove uma seção inteira da configuração (`git config --remove-section section`);
 
+## Locais de Configuração
+- system: `/etc/gitconfig` configura o Git para todos os usuários do sistema;
+- global: `~/.gitconfig` configura o Git para todos os projetos de um usuário;
+- local: `.git/config` configura o Git para um projeto específico;
+- worktree: `.git/config/worktree` configura o Git para parte de um projeto.
+
+**Overrinding**
+Se você definir uma configuração num local específico, ela vai substituir a configuração que foi definida de forma geral. Exemplo se eu definir `user.name` na configuração local, ela vai sobrepor o `user.name` definido na configuração global.
+
+![image](https://github.com/user-attachments/assets/77574cef-afdf-439e-a057-d953e809864f)
+
 ## Status
 - `untracked`: não está sendo rastreado pelo Git;
 - `staged`: marcado para incluir no próximo commit;
