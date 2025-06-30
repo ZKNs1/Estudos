@@ -39,7 +39,8 @@ Return: Oi 'Thomas', tudo bem?
 ## Caracteres Unicode
 Código de algum caractere especial, exemplo: `Coração: \u2764`.
 
-## Função Input
+## Funções
+### Input
 Permitir que um usuário digite e armazenar essa informação.
 
 Exemplo: 
@@ -47,3 +48,35 @@ Exemplo:
 Nome= input('Qual seu nome')
 print(f'Oii {Nome}! Bem-vindo')
 ```
+
+**Multiplas entradas num mesmo input**
+
+```python
+entradas = input("Digite os números separados por espaço: ").split()
+print(entradas) # ['10', '20', '30']
+```
+
+### Type
+Retorna o tipo de dado de uma variável.
+
+Exemplo: 
+```python
+x = 10
+print(type(x))  # <class 'int'>
+```
+
+Quando estamos trabalhando com o Input o type irá retornar string, para receber o tipo certo da variável deveremos converter a string para o tipo correto. 
+
+### Conversão de Dados
+
+- `int`: converte dados para inteiro;
+- `float`: converte dados para float;
+- `bool`: converte dados para booleano;
+- `str`: converte dados para string.
+
+Exemplo: o input armazena a informação em string, o int converte essa informação para um valor inteiro
+```python
+idade = int(input('digite sua idade')) 
+print(type(idade)) # <class 'int'>
+```
+
