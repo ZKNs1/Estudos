@@ -11,7 +11,10 @@ Este repositório contém anotações organizadas sobre temas relacionados à we
   Explicação sobre o protocolo HTTP, métodos (GET, POST, etc.), navegadores, hosting, DNS, status codes, cabeçalhos e segurança.
 
 - [`internet.md`](./internet.md)  
-  Visão geral sobre como a internet funciona, trasmissão de dados, termos.
+  Visão geral sobre como a internet funciona, transmissão de dados e principais termos.
 
 - [`python.md`](./python.md)  
-  Fundamentos da linguagem Python, string, escape sequence, funções e métodos.
+  Fundamentos da linguagem Python, strings, escape sequences, funções e métodos.
+
+- [`git.md`](./git.md)  
+  Sistema de controle de versão distribuído. Aborda comandos principais (`status`, `add`, `commit`, `push`, etc.), conceitos como Porcelain vs Plumb, configuração global/local, visualização de objetos (`cat-file`), hash dos commits, estados dos arquivos e como o Git armazena dados internamente com trees e blobs.
