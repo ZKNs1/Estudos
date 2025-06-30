@@ -72,7 +72,7 @@ de um repositório, que é um diretório que contém seu projeto e a pasta `.git
 - `<key>`: `<section>.<keyname>`, exemplo: user.name, webflyx.ceo;
 - `--unset`: utilizado para remover um valor de uma configuração;
 - `--unset-all`: remove tudo de uma key na sua configuração;
-- `--remove-section`: remove uma seção inteira da configuração;
+- `--remove-section`: remove uma seção inteira da configuração (`git config --remove-section section`);
 
 ## Status
 - `untracked`: não está sendo rastreado pelo Git;
