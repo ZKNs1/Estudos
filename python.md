@@ -9,11 +9,13 @@ print(f' Meu nome é {nome} e tenho {idade} anos')
 ```
 
 ## Métodos String
-- Upper - tudo maiúsculo
-- Lower - tudo minúsculo
-- Strip - retira espaços
-- Replace - substitui uma palavra por outra
-- Split - separa palavra por palavra
+- `upper`: tudo maiúsculo;
+- `lower`: tudo minúsculo;
+- `strip`: retira espaços;
+- `replace`: substitui uma palavra por outra;
+- `split`: separa palavra por palavra;
+- `capitalize`: a primeira letra fica maiúscula;
+- `find`: achar uma letra, uma palavra ou até uma frase, retorna a primeira ocorrência;
 
 ## Escape Sequence
 O `\n` quebra linha, já o `\t` forma a coluna.
@@ -50,10 +52,16 @@ print(f'Oii {Nome}! Bem-vindo')
 ```
 
 **Multiplas entradas num mesmo input**
+Para inserir multiplas entradas, a solução é utilizar o método Split para separar as respostas, porém se formos printar a variável que as armazenou ele retornará como uma lista.
 
 ```python
 entradas = input("Digite os números separados por espaço: ").split()
 print(entradas) # ['10', '20', '30']
+
+dados = input("Digite seu nome e idade: ").split()
+# Como será uma lista cada dado sera armazenado numa posição
+nome = dados[0]
+idade = dados [1]
 ```
 
 ### Type
@@ -80,3 +88,42 @@ idade = int(input('digite sua idade'))
 print(type(idade)) # <class 'int'>
 ```
 
+## Operadores de Comparação
+Retorna em booleano
+- `==`: igual a, exemplo: `x == y`;
+- `!=`: diferente de, exemplo: `x != y`;
+- `>`: maior que, exemplo: `x > y`;
+- `<`: menor que, exemplo: `x < y`;
+- `>=`: maior ou igual a, exemplo: `x >= y`;
+- `<=`: maior ou igual a, exemplo: `x <= y`.
+
+## Condições
+- `if`: se (true);
+- `elif`: ou;
+- `else`: senão (false).
+
+## Slice
+É uma forma de acessar partes de sequências.
+
+Sintaxe:
+```python
+sequencia[início:fim:passo]
+```
+- `início`: onde começa (inclusivo);
+- `fim`: índice onde termina (exclusivo);
+- `passo`: de quantos em quantos pula.
+
+Exemplos:
+```python
+s = "python"
+print(s[0:4])    # 'pyth' → começa no índice 0, vai até 3
+print(s[:])      # 'python' → cópia completa
+print(s[::-1])   # 'nohtyp' → inverte a string
+print(s[:3])     # 'pyt' → início padrão = 0
+print(s[3:])     # 'hon' → fim padrão = final da string
+print(s[::2])    # 'pto' → pega de 2 em 2
+
+lista = [10, 20, 30, 40, 50]
+print(lista[1:4])     # [20, 30, 40]
+print(lista[::-1])    # [50, 40, 30, 20, 10]
+```
