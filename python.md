@@ -76,7 +76,6 @@ print(type(x))  # <class 'int'>
 Quando estamos trabalhando com o Input o type irá retornar string, para receber o tipo certo da variável deveremos converter a string para o tipo correto. 
 
 ### Conversão de Dados
-
 - `int`: converte dados para inteiro;
 - `float`: converte dados para float;
 - `bool`: converte dados para booleano;
@@ -96,6 +95,14 @@ Retorna em booleano
 - `<`: menor que, exemplo: `x < y`;
 - `>=`: maior ou igual a, exemplo: `x >= y`;
 - `<=`: maior ou igual a, exemplo: `x <= y`.
+
+## Operadores de Atribuição
+Realizar calcúlos matemáticos com um código mais simples. Colocar um operador e o igual (=), exemplo: `x = 10` para atribuir o valor.
+- `+=`: `x += 5` resultado 15;
+- `-=`: `x -= 5` resultado 5;
+- `*=`: `x *= 5` resultado 50;
+- `/=`: `x /= 5` resultado 2;
+- `%=`: `x %= 3` resultado 1, conta quantos 3 tem dentro de 10 e retorna o resto, por exemplo cabe três 3 dentro de 10 e sobra 1 que é o resultado. Exemplo: `x %= 5` retorna 0, pois cabe dois 5 dentro de 10 e não sobra nada.
 
 ## Condições
 - `if`: se (true);
@@ -127,3 +134,10 @@ lista = [10, 20, 30, 40, 50]
 print(lista[1:4])     # [20, 30, 40]
 print(lista[::-1])    # [50, 40, 30, 20, 10]
 ```
+
+## Looping
+Quando precisa repetir alguma operação, evita poluição de código.
+
+**For**
+
+ds
