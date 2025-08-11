@@ -18,3 +18,9 @@ Este repositório contém anotações organizadas sobre temas relacionados à we
 
 - [`git.md`](./git.md)  
   Sistema de controle de versão distribuído. Aborda comandos principais (`status`, `add`, `commit`, `push`, etc.), conceitos como Porcelain vs Plumb, configuração global/local, visualização de objetos (`cat-file`), hash dos commits, estados dos arquivos e como o Git armazena dados internamente com trees e blobs.
+
+- [`dicionario.md`](./dicionario.md)  
+  Lista de conceitos e termos importantes para consulta rápida.
+
+- [`exercícios`](./exerc_aula.py)  
+  Arquivo com todos os exercícios práticos feitos durante as aulas.
